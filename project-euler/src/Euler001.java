@@ -22,7 +22,7 @@ public class Euler001 {
 	}
 	
 	/**
-	 * @param startTime
+	 * @param sum of elements
 	 * @return
 	 */
 	protected static long sumTraditional(long startTime) {
@@ -34,7 +34,7 @@ public class Euler001 {
 	}
 	
 	/**
-	 * @param startTime
+	 * @param sum of elements
 	 * @return
 	 */
 	protected static long sumWithIntStream(long startTime) {
@@ -48,7 +48,7 @@ public class Euler001 {
 	/**
 	 * @param sumOfElements
 	 * @param startTime
-	 * @return
+	 * @return string displaying sum and time used in nans
 	 */
 	private static String formatDisplay(long sumOfElements, long startTime) {
 		return Euler001.class.getSimpleName()
