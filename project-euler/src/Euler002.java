@@ -14,15 +14,16 @@ public class Euler002 {
 	 */
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
-		System.out.println(formatDisplay(getFibonacciSum(startTime), startTime));
+		System.out.println(formatDisplay(getFibonacciSum(), startTime));
 		//startTime = System.nanoTime();
 	}
 	
 	/**
+	 * Get sum of even fibonacci numbers
 	 * @param startTime
 	 * @return the calculated value
 	 */
-	protected static long getFibonacciSum(long startTime) {
+	protected static long getFibonacciSum() {
 		int thisFibNum = 1;
 		int followingFibNum = 1;
 		long sum = 0;
@@ -37,6 +38,7 @@ public class Euler002 {
 	}
 	
 	/**
+	 * format display
 	 * @param fibonacciSum
 	 * @param startTime
 	 * @return the result string

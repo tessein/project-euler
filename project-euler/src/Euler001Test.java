@@ -6,18 +6,18 @@ class Euler001Test {
 
 	@Test
 	void testMethodEquality() {
-		assertEquals(Euler001.sumTraditional(System.nanoTime()), Euler001.sumWithIntStream(System.nanoTime()));
+		assertEquals(Euler001.sumTraditional(), Euler001.sumWithIntStream());
 
 	}
 	
 	@Test
 	void testTraditionalMethodCorrectness() {
-		assertEquals(Euler001.sumTraditional(System.nanoTime()), 233168);
+		assertEquals(Euler001.sumTraditional(), 233168);
 	}
 	
 	@Test
 	void testIntStreamMethodCorrectness() {
-		assertEquals(Euler001.sumWithIntStream(System.nanoTime()), 233168);
+		assertEquals(Euler001.sumWithIntStream(), 233168);
 	}
 
 }

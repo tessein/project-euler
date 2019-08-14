@@ -12,7 +12,7 @@ class Euler002Test {
 	
 	@Test
 	void testTraditionalMethodCorrectness() {
-		assertEquals(Euler002.getFibonacciSum(System.nanoTime()), 4613732);
+		assertEquals(Euler002.getFibonacciSum(), 4613732);
 	}
 	
 //	@Test
