@@ -1,3 +1,4 @@
+import java.lang.invoke.MethodHandles;
 import java.util.stream.IntStream;
 
 /**
@@ -51,7 +52,7 @@ public class Euler001 {
 	 * @return string displaying sum and time used in nans
 	 */
 	private static String formatDisplay(long sumOfElements, long startTime) {
-		return Euler001.class.getSimpleName()
+		return MethodHandles.lookup().lookupClass().getName()
 				.concat(" = ").concat(Long.toString(sumOfElements))
 				.concat(" = ").concat(" finished in ")
 				.concat(Long.toString(System.nanoTime() - startTime))
