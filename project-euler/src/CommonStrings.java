@@ -20,7 +20,7 @@ public class CommonStrings {
 				}
 			}
 		}
-		System.out.println(resultString);
+		System.out.println(resultString.length());
 	}
 	
 	public static void compare2() {
