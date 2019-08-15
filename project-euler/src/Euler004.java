@@ -14,23 +14,23 @@ public class Euler004 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final long startTime = System.currentTimeMillis();
+		final long startTime = System.nanoTime();
 		final TreeSet<Integer> palindromes = new TreeSet<Integer>();
-		for (int i = 100; i <= 999; i++)
-			for (int j = 100; j <= 999; j++) {
+		for (int i = 900; i <= 999; i++)
+			for (int j = 900; j <= 999; j++) {
 				int cand = i * j;
 				if (isNumericPalindrome(cand))
 					palindromes.add(cand);
 			}
 		System.out.println("Euler004 = " + palindromes.last() + " - finished in "
-		    + (System.currentTimeMillis() - startTime) + " millis");
+		    + (System.nanoTime() - startTime) + " nanos");
 	}
 	
 	
 	/**
-	 * Check for numeric palindrome
+	 * Determine if numeric palindrome
 	 * @param candidate
-	 * @return true if palindrome
+	 * @return true if palindrome, otherwise false
 	 */
 	protected static boolean isNumericPalindrome(final int candidate) {
 		final StringBuilder val = new StringBuilder(String.valueOf(candidate));
