@@ -1,4 +1,5 @@
 import java.lang.invoke.MethodHandles;
+import java.util.stream.IntStream;
 
 /**
  * 
@@ -31,6 +32,18 @@ public class Euler003 {
 		}
 		return value;
 	}
+	
+//	protected static long testLPFactor() {
+//		long value = theTestValue;
+//		long largestPrime = IntStream.range(3, Math.sqrt(value) - 1)
+//				.forEach( i -> {
+//					if (i % 2 == 0) {
+//						while (theTestValue % i == 0)
+//							theTestValue /= i;
+//					}
+//				};
+//				
+//	}
 
 	/**
 	 * format display
