@@ -27,7 +27,7 @@ public class Euler006 {
 
 	
 	/**
-	 * calculate square of xums
+	 * calculate square of sums
 	 * @return
 	 */
 	public static long squareSumIntStream() {
